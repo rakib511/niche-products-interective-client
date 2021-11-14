@@ -7,13 +7,13 @@ const MyOrder = () => {
   const [isdeleted,setIsDeleted] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrder/${user?.email}`)
+    fetch(`https://infinite-lowlands-89222.herokuapp.com/myOrder/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, [user?.email,isdeleted]);
 
   const handleDelete = id =>{
-    fetch(`http://localhost:5000/deleteOrder/${id}`,{
+    fetch(`https://infinite-lowlands-89222.herokuapp.com/deleteOrder/${id}`,{
       method:"DELETE",
       headers:{"content-type":"application/json"}
     })

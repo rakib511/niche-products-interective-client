@@ -17,6 +17,7 @@ import AddData from '../AddData/AddData';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import SendRevew from '../Revew/SendRevew';
 import useAuth from '../hooks/useAuth'
+import Payment from '../Payment/Payment'
 
 import {
     Switch,
@@ -61,6 +62,11 @@ function Dashborard(props) {
       <List>
           <ListItem button>
             <Link to={`${url}/addRevew`}>AddRevew</Link>
+          </ListItem>
+      </List>
+      <List>
+          <ListItem button>
+            <Link to={`${url}/pay`}>Pay</Link>
           </ListItem>
       </List>
       <Divider />
@@ -145,6 +151,9 @@ function Dashborard(props) {
             </Route>
             <Route path={`${path}/addRevew`}>
             <SendRevew></SendRevew>
+            </Route>
+            <Route path={`${path}/pay`}>
+            <Payment></Payment>
             </Route>
         </Switch>
       </Box>

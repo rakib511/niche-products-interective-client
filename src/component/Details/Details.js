@@ -21,7 +21,7 @@ const Details = () => {
       const onSubmit = (data) => {
         data.email = user?.email;
         data.status = "pending";
-        fetch('http://localhost:5000/addOrders',{
+        fetch('https://infinite-lowlands-89222.herokuapp.com/addOrders',{
           method:"POST",
           headers:{"content-type":"application/json"},
           body:JSON.stringify(data)
@@ -35,7 +35,7 @@ const Details = () => {
 
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/productDetails/${productId}`)
+        fetch(`https://infinite-lowlands-89222.herokuapp.com/productDetails/${productId}`)
         .then(res => res.json())
         .then(data => setProductDetails(data))
     },[])

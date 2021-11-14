@@ -11,7 +11,7 @@ const AddData = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/addProducts", {
+    fetch("https://infinite-lowlands-89222.herokuapp.com/addProducts", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

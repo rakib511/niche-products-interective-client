@@ -6,7 +6,7 @@ const SendRevew = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   const { user } = useAuth();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/addsReview", {
+    fetch("https://infinite-lowlands-89222.herokuapp.com/addsReview", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

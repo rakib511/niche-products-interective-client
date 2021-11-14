@@ -5,7 +5,7 @@ const Catelogs = () => {
     const [catelogs,setCatelogs] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/catelogs')
+        fetch('https://infinite-lowlands-89222.herokuapp.com/catelogs')
         .then(res => res.json())
         .then(data => setCatelogs(data))
     },[])
