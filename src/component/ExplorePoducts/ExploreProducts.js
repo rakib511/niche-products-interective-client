@@ -7,7 +7,7 @@ const ExploreProducts = (props) => {
         <div className="col-md-4 col-sm-6">
             
             <div >
-            <div className="card mb-1" style={{"width": "18rem"}}>
+            <div className="card mb-1" style={{"width": "18rem","height":"100%"}}>
                 <img src={img} class="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{name} </h5>

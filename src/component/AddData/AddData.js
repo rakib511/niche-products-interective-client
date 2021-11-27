@@ -23,7 +23,7 @@ const AddData = () => {
   return (
     <div>
       <div>
-        <h1 className="mt-5 text-center text-danger">Please Add Services</h1>
+        <h1 className="mt-5 text-center text-danger">Add Products</h1>
         <div className=" w-25 m-auto mt-5">
           <div className=" ">
             <div className="">
